@@ -19,4 +19,9 @@
 }
 
 
+- (IBAction)randomWord:(id)sender {
+    NSArray* words = @[@"Fresa", @"Manzana", @"Pera", @"Melon", @"Piña", @"Sandia", @"Durazno", @"Uvas", @"Mango"];
+    int num = arc4random()%words.count;
+    self.label.text=words[num];
+}
 @end
